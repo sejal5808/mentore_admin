@@ -30,23 +30,23 @@ const curdSchema = new mongoose.Schema({
 const coursesSchema = new mongoose.Schema({
     name: {
         type: String,
-        require: true
+        require: false
     },
     price: {
         type: Number,
-        require: true
+        require: false
     },
     image: {
         type: Array,
-        require: true
+        require: false
     },
     SubTitle: {
         type: String,
-        require: true
+        require: false
     },
     description: {
         type: String,
-        require: true
+        require: false
     },
     user_id:{
         type:mongoose.ObjectId,

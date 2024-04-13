@@ -56,6 +56,7 @@ io.on('connection', (socket) => {
 
     const recipientSocket = connectedUsers[recipientId];
     if (recipientSocket) {
+      console.log("recipientSocket",recipientSocket)
       recipientSocket.emit('private_message', { senderId, content });
     } else {
       console.log('Recipient is not connected');
